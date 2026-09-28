@@ -24,14 +24,13 @@
 
  /** Classe para representar a forma Retângulo */
 public class Retangulo extends PoligonoReto{
-    
     /**
      * Construtor: recebe base e altura. A classe-mãe valida ambos valores para o mínimo de 1
      * @param base Base para o retângulo. Valor deve ser igual ou maior a 1, ou será corrigido para 1.
      * @param altura Altura para o retângulo. Valor deve ser igual ou maior a 1, ou será corrigido para 1.
      */
     public Retangulo(double base, double altura){
-        
+        super("Retângulo", base, altura);
     }
 
     /**
@@ -40,7 +39,7 @@ public class Retangulo extends PoligonoReto{
      */
     @Override
     public double area(){
-        //TODO
+        return base * altura;
     }
 
     /**
@@ -49,7 +48,7 @@ public class Retangulo extends PoligonoReto{
      */
     @Override
     public double perimetro(){
-        //TODO
+        return (altura * 2) + (base * 2);
     }
 
     /**
