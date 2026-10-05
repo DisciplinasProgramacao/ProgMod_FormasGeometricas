@@ -36,15 +36,15 @@ public class Circulo extends FormaGeometrica{
             raio = 1d;
         this.raio = raio;
     }
-
    
     /**
      * Calcula e retorna a área do círculo
      * @return Área do círculo (double)
      */
     @Override
-    public double area(){
-        //TODO
+    public double area (){
+        return Math.PI*Math.pow(raio, 2);
+
     }
 
     /**
@@ -53,7 +53,7 @@ public class Circulo extends FormaGeometrica{
      */
     @Override
     public double perimetro(){
-        //TODO
+        return 2*Math.PI*raio;
     }
 
     /**
